@@ -92,3 +92,31 @@ if (runnerAge >= 18 && earlyRegistration === true) {
 } else if (runnerAge < 18) {
   console.log(`Runner number ${raceNumber}: You will race at 12:30PM.`);
 }
+
+//Array Practice -- Secret Message Project
+let secretMessage = [
+  "Learning",
+  "is",
+  "not",
+  "about",
+  "what",
+  "you",
+  "get",
+  "easily",
+  "the",
+  "first",
+  "time,",
+  "it",
+  "is",
+  "about",
+  "what",
+  "you",
+  "can",
+  "figure",
+  "out.",
+  "-2015,",
+  "Chris",
+  "Pine,",
+  "Learn",
+  "JavaScript",
+];
