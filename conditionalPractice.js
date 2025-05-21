@@ -120,3 +120,14 @@ let secretMessage = [
   "Learn",
   "JavaScript",
 ];
+
+secretMessage.pop();
+console.log(secretMessage.length);
+
+secretMessage.push("to", "Program");
+
+secretMessage.splice(7, 1, "right");
+secretMessage.shift();
+secretMessage.unshift("Programming");
+secretMessage.splice(6, 5, "know");
+console.log(secretMessage.join());
