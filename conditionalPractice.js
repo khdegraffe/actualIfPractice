@@ -131,3 +131,39 @@ secretMessage.shift();
 secretMessage.unshift("Programming");
 secretMessage.splice(6, 5, "know");
 console.log(secretMessage.join());
+
+//Loops Exercise
+
+//Given an array of names and a "target name", write a function that takes the array and "target name" as arguments and returns true if the name exists in the array or false if it does not.
+
+const names = [
+  "Sarah",
+  "Josh",
+  "Luke",
+  "Kelsey",
+  "Stef",
+  "Robert",
+  "Fiona",
+  "Charlotte",
+  "Jack",
+];
+
+// const targetName = "Charlotte";
+
+const doesNameExist = function (array, targetName) {
+  for (let i = 0; i < array.length; i++) {
+    let name = array[i];
+
+    name = name.toLowerCase();
+
+    if (name === targetName) {
+      return true;
+    }
+  }
+
+  return false;
+};
+
+const doesCharltoteExist = doesNameExist(names, "Charlotte");
+
+console.log(doesNameExist(names, "luke"));
