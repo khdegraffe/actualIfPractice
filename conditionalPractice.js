@@ -167,3 +167,32 @@ const doesNameExist = function (array, targetName) {
 const doesCharltoteExist = doesNameExist(names, "Charlotte");
 
 console.log(doesNameExist(names, "luke"));
+
+//WHALE TALK PROJECT
+//Rules
+// 1) No consonants -- only vowels excluding "y"
+// 2) The u's and e's are extra long, so we must double them in our program
+
+const input = "All-time knicks choke job";
+
+const vowels = ["a", "e", "i", "o", "u"];
+
+let resultArray = [];
+
+for (let i = 0; i < input.length; i++) {
+  if (input[i].toLowerCase() === "e") {
+    resultArray.push(input[i]);
+  }
+  if (input[i].toLowerCase() === "u") {
+    resultArray.push(input[i]);
+  }
+  for (let j = 0; j < vowels.length; j++) {
+    if (input[i].toLowerCase() === vowels[j]) {
+      resultArray.push(input[i]);
+    }
+  }
+}
+console.log(resultArray);
+
+let resultString = resultArray.join("").toUpperCase();
+console.log(resultString);
